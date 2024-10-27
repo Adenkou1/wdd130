@@ -1,25 +1,106 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #333;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+/* Main Content Styling */
+main {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+main img {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+main p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 15px;
+}
+
+/* Aside Section Styling */
+aside {
+  padding: 20px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+aside h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+aside img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+aside p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main, aside {
+    width: 90%;
+    margin: 10px auto;
   }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+
+  main img, aside img {
+    width: 100%;
   }
-  
-  header, section, footer {
-    padding: 20px;
-  }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+}
